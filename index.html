@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hover Buttons Demo — Color & Shape</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Hover Buttons Demo — Color & Shape</h1>
+    <p class="lead">Open this file in a browser to see interactive hover effects. Below are several examples and the CSS that drives them.</p>
+
+    <div class="grid">
+      <div class="card">
+        <strong>1) Color change on hover</strong>
+        <div class="demo-row" style="margin-top:12px">
+          <button class="btn btn-color">Primary</button>
+          <button class="btn btn-color" style="background:linear-gradient(90deg,#ffb199,#ffd4a9)">Secondary</button>
+        </div>
+        <p class="hint">Hover: the background smoothly swaps colors and the button lifts.</p>
+      </div>
+
+      <div class="card">
+        <strong>2) Shape morph</strong>
+        <div class="demo-row" style="margin-top:12px">
+          <button class="btn btn-shape">Morph me</button>
+          <button class="btn btn-shape" style="border-color:rgba(255,107,107,0.6)">Also morph</button>
+        </div>
+        <p class="hint">Hover: border-radius animates to create a pill shape.</p>
+      </div>
+
+      <div class="card">
+        <strong>3) Icon rotate + color swap</strong>
+        <div class="demo-row" style="margin-top:12px">
+          <button class="btn btn-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Continue
+          </button>
+        </div>
+        <p class="hint">Hover: icon rotates while the button background switches to a gradient.</p>
+      </div>
+
+      <div class="card">
+        <strong>4) Outline → Animated fill</strong>
+        <div class="demo-row" style="margin-top:12px">
+          <button class="btn btn-fill"><span>Reveal Fill</span></button>
+        </div>
+        <p class="hint">Hover: a pseudo-element slides in to fill the button with color.</p>
+      </div>
+
+      <div class="card">
+        <strong>5) 3D lift & shadow</strong>
+        <div class="demo-row" style="margin-top:12px">
+          <button class="btn btn-3d">Launch</button>
+        </div>
+        <p class="hint">Hover: subtle 3D transform and deeper shadow for a tactile feel.</p>
+      </div>
+    </div>
+
+    <p class="hint">Tip: tweak <code>transition</code> duration and timing-function to change how "snappy" or "smooth" the hover animations feel.</p>
+  </div>
+</body>
+</html>
